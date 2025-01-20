@@ -13,7 +13,7 @@ CREATE TABLE "Campaign" (
     "backers_count" INT   NOT NULL,
     "country" VARCHAR(10)   NOT NULL,
     "currency" VARCHAR(10)   NOT NULL,
-    "launch_date" DATE   NOT NULL,
+    "launched_date" DATE   NOT NULL,
     "end_date" DATE   NOT NULL,
     "category_id" VARCHAR(10)   NOT NULL,
     "subcategory_id" VARCHAR(10)   NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE "Campaign" (
 
 CREATE TABLE "Category" (
     "category_id" VARCHAR(10)   NOT NULL,
-    "category_name" VARCHAR(50)   NOT NULL,
+    "category" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_Category" PRIMARY KEY (
         "category_id"
      )
@@ -32,7 +32,7 @@ CREATE TABLE "Category" (
 
 CREATE TABLE "Subcategory" (
     "subcategory_id" VARCHAR(10)   NOT NULL,
-    "subcategory_name" VARCHAR(50)   NOT NULL,
+    "subcategory" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_Subcategory" PRIMARY KEY (
         "subcategory_id"
      )
@@ -57,3 +57,7 @@ REFERENCES "Category" ("category_id");
 ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "Subcategory" ("subcategory_id");
 
+SELECT * FROM "Campaign";
+SELECT * FROM "Category";
+SELECT * FROM "Subcategory";
+SELECT * FROM "Contacts";

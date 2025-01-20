@@ -1,16 +1,16 @@
-#Team 5 - Project 2 - ETL Mini Project 
+# Team 5 - Project 2 - ETL Mini Project 
 
     The project involves creating an ETL pipeline to extract, transform, and load data from Excel files into a PostgreSQL database. 
     The work is divided into specific tasks, assigned to team members to ensure efficient collaboration and progress tracking.
  
- ##Project Overview
+ ## Project Overview
 
     Goal: Build an ETL pipeline using Python and Pandas to process data, create CSV files, design an ERD, 
     define a PostgreSQL schema, and load the transformed data into the database.
 
 
 
-##Task Assignments
+## Task Assignments
 
 1. Create the Category and Subcategory DataFrames
    Assigned to: Kaouther Abid

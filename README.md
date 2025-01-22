@@ -53,7 +53,7 @@
 
     Steps:
 
-Option 1: Python Dictionary Methods (Easiest):
+Option 1: Python Dictionary Method:
     
     1.    Load contacts.xlsx into a Pandas DataFrame.
     2.    Iterate through each row, converting it into a dictionary.
@@ -63,15 +63,6 @@ Option 1: Python Dictionary Methods (Easiest):
           •    Columns: contact_id, first_name, last_name, and email.
     6.    Export the DataFrame as:
           •    contacts.csv
-
-Option 2: Regular Expressions (Advanced):
-   
-    1.    Load contacts.xlsx into a Pandas DataFrame.
-    2.    Use regex to extract contact_id, name, and email from raw text.
-    3.    Split the name column into first_name and last_name.
-    4.    Create and export the DataFrame as:
-          •    contacts.csv
-
 
 4. Design the ERD and Set Up the Database
    Assigned to: Erika Dorsainvil / Melisa Hodzic
